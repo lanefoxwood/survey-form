@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rockin' Survey!</title>
+</head>
+<body>
+    <h1 id="title">This is the title of the page</h1>
+    <p id="description">this is the description</p>
+
+
+    <form action="#" id="survey-form">
+        <label for="name"  id="name-label">Enter your name:</label>
+        <input type="text" name="name" id="name" required placeholder="full name">
+
+        <label for="email"  id="email-label">Enter your email address:</label>
+        <input type="email" name="email"  id="email" required placeholder="valid email">
+
+        <label for="number"  id="number-label">Enter a number:</label>
+        <input type="number" value="0" step="0.01"  name="number"  id="number" required placeholder="number 1-10" min="0" max="10">
+
+        <label for="dropdown"  id="dropdown-label">Select option</label>
+        <select name="select" id="dropdown">
+            <option selected value="one">--Please choose an option--</option>
+            <option value="one">one</option>
+            <option value="two">two</option>
+        </select>
+        <fieldset>
+            <legend>Select a prefence:</legend>
+
+            <div>
+                <label for="smooth">Smooth</label>
+                <input type="radio" name="prefernce" id="smooth" value="smooth" checked >
+            </div>
+            <div>
+                <label for="crunchy">Crunchy</label>
+                <input type="radio" name="prefernce" id="crunchy" value="crunchy" >
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Choose additional features:</legend>
+
+            <div>
+                <label for="noCrust">No crust</label>
+                <input type="checkbox" name="noCrust" id="noCrust" value="noCrust" >
+            </div>
+            <div>
+                <label for="grilled">Grilled</label>
+                <input type="checkbox" name="grilled" id="grilled" value="grilled">
+            </div>
+            <div>
+                <label for="toasted">Toasted</label>
+                <input type="checkbox" name="toasted" id="toasted" value="toasted" checked >
+            </div>
+        </fieldset>
+        
+        <div>
+            <label for="comments">Any additional comments:</label>
+            <textarea name="comments" id="comments" value="null" cols="30" rows="10" placeholder="enter your comment text here"></textarea>
+        </div>
+        
+    
+        <label for="button">Submit this form</label>
+        <button id="submit">Order Now!</button>
+        
+        
+    </form>
+
+
+</body>
+</html>
